@@ -1,0 +1,525 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero_section {
+    background: url(https://img.freepik.com/premium-photo/indian-lunch-dinner-main-course-food-group-includes-paneer-butter-masala-dal-makhani-palak-paneer-roti-rice-etc-selective-focus_466689-6855.jpg?w=900);
+    background-position: center;
+    color: white;
+    background-size: cover;
+    min-height: 70vh;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    height: 60px;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.nav_menu_container {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.herosection_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(60vh - 60px);
+    gap: 32px;
+}
+
+.herosection_logo {
+    width: 250px;
+    height: auto;
+}
+
+.herosection_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.herosection_input_container {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.input_container_location,
+.input_container_search {
+    padding: 5px;
+    border: none;
+    outline: none;
+
+}
+
+.input_container_search {
+    width: 65%;
+}
+
+.input_container_location {
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+
+}
+
+@media only screen and (max-width:600px) {
+    .nav_menu_container .link {
+        display: none;
+    }
+
+    .navbar {
+        padding: 16px;
+    }
+
+    .hero_section {
+        min-height: 80vh;
+    }
+
+    .herosection_input_container {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+
+    }
+
+    .input_container_location,
+    .input_container_search {
+        padding: 15px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    .herosection_container {
+        height: cal(80vh-60px);
+
+    }
+
+    .input_container_location {
+        border-right: none;
+    }
+
+}
+
+.container {
+    margin: 48px auto;
+    width: 80%;
+}
+
+.we_offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.we_offer .card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+
+}
+
+.we_offer .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we_offer .card h2 {
+    padding: 10px 10px 0 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.we_offer .card p {
+    font-size: 13px;
+    padding: 0 10px 15px 10px;
+}
+
+.we_offer .card:hover {
+    transform: scale(1.05);
+}
+
+.collection h1 {
+    font-weight: 400;
+}
+
+.collection .sub_heading_container {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+
+.sub_heading_container span:nth-child(2) {
+    color: #ff7e8b;
+    font-size: 13px;
+}
+
+.collection_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.collection_card_container .card {
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card1 {
+    background: url(https://st3.depositphotos.com/2751237/15142/v/450/depositphotos_151420526-stock-illustration-player-in-cricket-championship-background.jpg);
+}
+
+.card2 {
+    background: url(https://images.unsplash.com/photo-1605194000384-439c3ced8d15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+.card3 {
+    background: url(https://images.unsplash.com/photo-1540224769541-7e6e20a42330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fG5ld2x5JTIwb3BlbiUyMHJlc3RhdXJhbnR8ZW58MHwxfDB8fHww&auto=format&fit=crop&w=600&q=60);
+}
+
+.card4 {
+    background: url(https://images.unsplash.com/photo-1559054663-e8d23213f55c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGZvb2R8ZW58MHwxfDB8fHww&auto=format&fit=crop&w=600&q=60);
+}
+
+.overlay {
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.05) 50%,
+            rgba(0, 0, 0, 0.05) 85%);
+    width: 100%;
+    height: 100%;
+    display: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.collection_card_container .card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 14px;
+}
+
+.content h4 {
+    font-weight: 400;
+}
+
+.get_the_app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 243, 236);
+    width: 100%;
+    padding: 48px 48px;
+
+}
+
+.get_the_app .semicontainer {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+
+}
+
+.get_the_app .semicontainer .left {
+    flex: 2;
+
+}
+
+.get_the_app .semicontainer .left img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.get_the_app .semicontainer .right {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+}
+
+.right h1 {
+    font-weight: 600;
+    font-size: 32px;
+
+}
+
+.right p {
+    font-size: 14px;
+
+}
+
+.semicontainer .right .radio_buttons_container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.semicontainer .right .radio_buttons_container div {
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.semicontainer .right .radio_buttons_container div input {
+    height: 15px;
+    width: 15px;
+
+}
+
+.semicontainer .right .input_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.input_container button,
+.input_container input {
+    padding: 10px 12px;
+}
+
+.input_container input {
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.input_container button {
+    border: none;
+    background-color: #ff7e8b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download_app_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+
+}
+
+.download_app_container h5 {
+    font-weight: 400;
+    color: gray;
+    gap: 16px;
+
+}
+
+.download_app_container div img {
+    width: 35%;
+}
+
+@media only screen and (max-width:1300px) {
+    .get_the_app .semicontainer .left {
+        flex: 1;
+    }
+
+    .get_the_app .semicontainer .right {
+        flex: 1;
+
+    }
+
+    .get_the_app .semicontainer {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .get_the_app {
+        padding: 2rem;
+    }
+
+    .get_the_app .semicontainer {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .get_the_app {
+        padding: 3rem 0;
+    }
+
+    .get_the_app .semicontainer {
+        width: 80%;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer_section1 img {
+    width: 120px;
+    height: auto;
+}
+
+.section1_buttoncontainer {
+    display: flex;
+    gap: 16px;
+}
+
+.section1_buttoncontainer button {
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation_container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 48px 0;
+}
+
+.link_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.link_container h5 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.footer_link:hover {
+    color: black;
+}
+
+.social_links_container {
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.social_links_container button {
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_links_container button i {
+    color: white;
+    font-size: 13px;
+
+}
+
+.footer_store_logos {
+    width: 100%;
+
+}
+.footer .disclaimer{
+    width:90%;
+    margin: auto;
+    padding: 20px 0;
+    font-size:12px;
+    color:gray;
+    border-top: 1px solid gray;
+
+}
+@media only screen and (max-width: 900px){
+     .navigation_container{
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+}
+@media only screen and (max-width: 600px){
+    .navigation_container{
+       grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 450px){
+    .footer_section1{
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    .navigation_container{
+       grid-template-columns: 1fr;
+    }
+}
